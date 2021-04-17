@@ -43,7 +43,7 @@ After installation, run "npm install" in your terminal (external or within VS Co
 
 ## Links
  
-  * Deployed: 
+  * Deployed: https://samohtebag.github.io/team-profile-generator/
   * Github Repository URL: (https://github.com/samohtebag/team-profile-generator)
   * Generated HTML URL: 
   
