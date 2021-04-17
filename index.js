@@ -104,7 +104,7 @@ function engineerQuestions() {
     })
 };
 
-function askInternQuestion() {
+function internQuestions() {
     inquirer.prompt([
       {
             name: "internName",

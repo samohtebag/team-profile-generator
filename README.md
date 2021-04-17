@@ -62,7 +62,7 @@ After installation, run "npm install" in your terminal (external or within VS Co
 
   Run either "npm run test" to run the full test suite or jest *test name* to run the test the "test" files individually. 
 
-
+[Tests-Passed](https://i.imgur.com/UycCu2O.mp4)
 
 <a name="#questions"></a>
 
