@@ -43,7 +43,7 @@ After installation, run "npm install" in your terminal (external or within VS Co
 
 ## Links
  
-  * Deployed: 
+  * Deployed: https://samohtebag.github.io/team-profile-generator/
   * Github Repository URL: (https://github.com/samohtebag/team-profile-generator)
   * Generated HTML URL: 
   
@@ -62,7 +62,14 @@ After installation, run "npm install" in your terminal (external or within VS Co
 
   Run either "npm run test" to run the full test suite or jest *test name* to run the test the "test" files individually. 
 
+<<<<<<< HEAD
 [Tests-Passed](https://i.imgur.com/UycCu2O.mp4)
+=======
+  [test-video](https://i.imgur.com/UycCu2O.mp4)
+  
+  [app-run-video](https://cdn.loom.com/sessions/thumbnails/public/bb22a6a82f7642829cf8453443726e2b-with-play.gif)
+  
+>>>>>>> 1e308245bdeddd72a5815f1f4097e3ae9b0f2c52
 
 <a name="#questions"></a>
 
@@ -71,6 +78,7 @@ After installation, run "npm install" in your terminal (external or within VS Co
 Feel free to reach out via email (gthomas513@gmail.com) or connect with me on LinkedIn, or Github. 
 
 (https://www.linkedin.com/in/gabriel-thomas513/)
+
 (https://github.com/samohtebag) 
 
 
@@ -82,4 +90,5 @@ Feel free to reach out via email (gthomas513@gmail.com) or connect with me on Li
 Thank you to the following individuals for their insights and perspectives on this project.
 
 Patrick Walker: https://github.com/pat31477
+
 Clifford Morin: https://github.com/CliffordMorin/
