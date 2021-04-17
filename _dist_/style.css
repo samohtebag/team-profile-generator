@@ -1,0 +1,12 @@
+body {
+    background-color: orange;
+}
+
+.row {
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card-ctn {
+    padding: 0 15% 0 15%;
+}
