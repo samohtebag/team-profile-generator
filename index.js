@@ -151,7 +151,7 @@ const print = () => {
   }
   
 
-startingPrompt()
+startPrompt()
 
 const init = () => {
 
