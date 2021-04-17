@@ -11,6 +11,8 @@ const generateHTML = require('./src/generateHTML');
 
 let myTeamArray = [];
 
+const htmlAsync = util.promisify(fs.writeFile);
+
 function startPrompt() {
     inquirer.prompt([
         {
@@ -76,5 +78,85 @@ function addMyTeam() {
                     completedTeam();
                     break
             }
-        })
+        });
 }
+
+function addEngineer() {
+    inquirer.prompt([
+        {
+            name: "name",
+            message: "What's your new engineer's name?"
+        },
+
+        {
+            name: "email",
+            message: "What's this new engineer's email address?"
+        },
+
+        {
+            name: "github",
+            message: "What's this engineer's Github username?"
+        }
+    ])
+
+        .then(function(data) {
+            const name = data.name;
+            const id = myTeamArray.length + 1;
+            const email = data.email;
+            const github = data.github
+            const teamMember = new Engineer(name, id, email, github)
+            myTeamArray.push(teamMember)
+            addMyTeam();
+        });
+}
+
+function addIntern() {
+    inquirer.prompt([
+        {
+            name: "name",
+            message: "What's the new intern's name?"
+
+        },
+
+        {
+            name: "email",
+            message: "What's this new intern's email address?"
+
+        },
+
+        {
+            name: "school",
+            message: "I forget, where did this new intern go to school?"
+
+        }
+    ])
+
+        .then(function (data) {
+            const name = data.name
+            const id = finalTeamArray.length + 1
+            const email = data.email
+            const school = data.school
+            const teamMember = new Intern(name, id, email, school)
+            finalTeamArray.push(teamMember)
+            addTeamMembers()
+    });
+}
+
+const print = () => {
+
+    let html = generateHTML(myTeamArray);
+        htmlAsync('./dist/index.html', html)
+        .then(() => console.log('Successfully wrote to index.html'))
+        .catch((err) => console.error(err));
+  }
+  
+
+startingPrompt()
+
+const init = () => {
+
+    addMyTeam();
+      
+  };
+  
+  init();
